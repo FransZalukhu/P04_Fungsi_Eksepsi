@@ -1,6 +1,7 @@
 import 'dart:io';
+
 void printList(List<dynamic> myList) {
-  // tampilkan elemen myList
+  // Tampilkan Elemen myList
   myList.forEach((element) {
     stdout.write('$element ');
   });
@@ -11,13 +12,13 @@ void main(List<String> args) {
   List<int> myList = [];
   List<int> list = [1, 2, 3, 4];
 
-  // tampilkan elemen list
+  // Tampilkan Elemen List
   for (var bilangan in list) {
     stdout.write('$bilangan ');
   }
   stdout.write('\n');
 
-  // operasi list
+  // Operasi List
   myList.add(10);
   myList.addAll(list);
   myList.insert(1, 20);
@@ -59,11 +60,11 @@ void main(List<String> args) {
   myList.add(20);
   printList(myList);
 
-  // konversi list ke set
+  // Konversi List ke Set
   Set<int> mySet = myList.toSet();
   print(mySet.toString());
 
-  // konversi list ke map
+  // Konversi List ke Map
   List<String> strList = [];
   strList = myList.map((number) => 'Angka ' + number.toString()).toList();
   printList(strList);
